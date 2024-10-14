@@ -1,0 +1,343 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+  box-sizing: border-box;
+  
+}
+#root{
+  overflow: scroll;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+a {
+  text-decoration: none;
+  color: black; 
+}
+
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.category-btn:hover {
+  background-color: #FC1503 !important;
+  color: white !important;
+}
+
+.category-btn:hover span{
+  color: white !important;
+}
+
+.react-player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+
+.search-bar{
+  border:none;
+  outline:none;
+  width:350px;
+}
+
+.category-btn{
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor:pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  width:fit-content;
+  padding: 7px 15px;
+  margin: 10px 5px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width:800px){
+  .copyright{
+    display:none !important;
+    
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
+
+  .react-player {
+    height: 45vh !important;
+  }
+  .search-bar{
+    width:200px;
+    /* color:antiquewhite */
+    color:#f3fef3;
+  }
+}
+
+
+.btn:hover{
+background: white;
+color:#FC1503;
+}
+
+
+/* signIn page styling */
+
+.signInContainer{
+  /* border:1px solid white; */
+  width: 95%;
+  height:80vh;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  color:white;
+  position: relative;
+}
+
+.signTypography{
+  /* border:1px solid red; */
+  width: 40%;
+  height: 90%;
+  margin: 15px;
+  margin-left: 50px;
+}
+
+.signTypography h2{
+  color:white;
+  font-size: 3.5rem;
+}
+.signTypography span{
+  color:white;
+  font-size: 1.5rem;
+}
+
+.signInFormContainer{
+  border:1px solid white;
+  width: 28%;
+  height: 85%;
+  margin: 15px;
+  position: absolute;
+  right: 2%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 1px #FC1503;
+}
+
+.signInFormContainer h3{
+color:white;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.signInFormContainer label{
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.signInForm div{
+  padding:15px;
+}
+
+.signInForm button{
+  padding:12px;
+  border: 1px dotted #FC1503;
+  color:white;
+  background-color: transparent;
+  text-align: center;
+  margin-left:40%;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top:10px;
+}
+
+.signInForm button:last-child{
+  margin-left: 30%;
+}
+/* .signInForm input{
+  border: none;
+  border-bottom: 1px dotted #FC1503;
+} */
+
+.signInForm button:hover{
+  color: white;
+  background-color: #FC1503;
+
+}
+
+.signInForm input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: white;
+  background:none;
+  color: #f3fef3;
+}
+.signInForm input:focus {
+  border-color: #FC1503;
+  outline: 1px dotted #000
+}
+
+.signInEmail input{
+  margin-left: 22px;
+}
+
+/* SignUp page styling */
+
+.signUpContainer{
+  /* border:1px solid white; */
+  width: 95%;
+  height:80vh;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  color:white;
+  position: relative;
+}
+
+.signTypography{
+  /* border:1px solid red; */
+  width: 40%;
+  height: 90%;
+  margin: 15px;
+  margin-left: 50px;
+}
+
+.signTypography h2{
+  color:white;
+  font-size: 3.5rem;
+}
+.signTypography span{
+  color:white;
+  font-size: 1.5rem;
+}
+
+.signUpFormContainer{
+  border:1px solid white;
+  width: 28%;
+  height: 85%;
+  margin: 15px;
+  position: absolute;
+  right: 2%;
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 1px #FC1503;
+}
+
+.signUpFormContainer h3{
+color:white;
+font-size: 1.5rem;
+text-align: center;
+}
+
+.signUpFormContainer label{
+  margin-left: 11px;
+  margin-right: 11px;
+}
+
+.signUpForm div{
+  padding:15px;
+}
+
+.signUpForm button{
+  padding:12px;
+  border: 1px dotted #FC1503;
+  color:white;
+  background-color: transparent;
+  text-align: center;
+  margin-left:40%;
+  font-size: 1rem;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-top:10px;
+}
+
+.signUpForm button:last-child{
+  margin-left: 30%;
+}
+/* .signInForm input{
+  border: none;
+  border-bottom: 1px dotted #FC1503;
+} */
+
+.signUpForm button:hover{
+  color: white;
+  background-color: #FC1503;
+
+}
+
+.signUpForm input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: white;
+  background:none;
+  color: #f3fef3;
+}
+.signUpForm input:focus {
+  border-color: #FC1503;
+  outline: 1px dotted #000
+}
+
+.signUpEmail input{
+  margin-left: 22px;
+}
+
+
+.navigatorCard{
+  width: 270px;
+  height: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 14px;
+}
+
+.navigatorCard img{
+  width: 100%;
+  filter: blur(50%);
+  height: 100%;
+  filter: brightness(40%);
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.navigatorCard img:hover{
+  filter: blur(10%);
+  filter: brightness(20%);
+}
+.navigatorCard span{
+  position: absolute;
+  top:40%;
+  color:white;
+  font-size: 2rem;
+  z-index: 4;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 5%;
+}
+
+ 
